@@ -1,0 +1,63 @@
+{
+  "catalog": {
+    "uuid": "2f9b6b70-7a53-45aa-90f2-ec4b56a27f95",
+    "metadata": {
+      "title": "CIS Red Hat Enterprise Linux 9 Benchmark",
+      "last-modified": "2025-10-01T00:00:00Z",
+      "version": "1.0.0",
+      "oscal-version": "1.0.4",
+      "roles": [
+        {
+          "id": "creator",
+          "title": "CIS Security Team"
+        }
+      ]
+    },
+    "groups": [
+      {
+        "id": "cis_rhel9_controls",
+        "title": "CIS RHEL9 Controls",
+        "controls": [
+          {
+            "id": "CIS-1.1.1",
+            "title": "Ensure mounting of cramfs filesystems is disabled",
+            "class": "technical",
+            "params": [],
+            "props": [
+              {
+                "name": "severity",
+                "value": "medium"
+              }
+            ],
+            "links": [],
+            "parts": [
+              {
+                "id": "guidance",
+                "name": "guidance",
+                "prose": "Disable cramfs filesystem in /etc/modprobe.d/ to prevent it from being loaded."
+              }
+            ]
+          },
+          {
+            "id": "CIS-1.2.1",
+            "title": "Ensure GPG keys are configured",
+            "class": "management",
+            "props": [
+              {
+                "name": "severity",
+                "value": "high"
+              }
+            ],
+            "parts": [
+              {
+                "id": "guidance",
+                "name": "guidance",
+                "prose": "Verify that GPG keys for repositories are correctly configured."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "component-definition": {
+    "uuid": "6fc2b2be-25c7-45c3-a9f4-78e4eecff24d",
+    "metadata": {
+      "title": "OSCAP RHEL9 Compliance Component",
+      "last-modified": "2025-10-05T00:00:00Z",
+      "version": "1.0.0",
+      "oscal-version": "1.0.4",
+      "roles": [
+        {
+          "id": "developer",
+          "title": "ACME Security Automation Team"
+        }
+      ]
+    },
+    "components": [
+      {
+        "uuid": "9c1a912a-d02e-4b90-a4a7-8d999d54b7aa",
+        "type": "software",
+        "title": "OSCAP Scanner",
+        "description": "Automated compliance scanning for RHEL9 using OpenSCAP",
+        "responsible-roles": [
+          {
+            "role-id": "developer",
+            "party-uuids": []
+          }
+        ],
+        "control-implementations": [
+          {
+            "source": "./cis_catalog.json",
+            "description": "Implements CIS RHEL9 benchmark controls.",
+            "implemented-requirements": [
+              {
+                "control-id": "CIS-1.1.1",
+                "uuid": "53a5dbce-b93b-4b25-b90f-b8a234f3d001",
+                "description": "OSCAP scan disables cramfs via modprobe configuration."
+              },
+              {
+                "control-id": "CIS-1.2.1",
+                "uuid": "b92c348a-016f-4784-b29f-88065b8c2f05",
+                "description": "OSCAP validates GPG key configuration in RHEL9 repositories."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
