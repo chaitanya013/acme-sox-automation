@@ -1,0 +1,44 @@
+{
+  "component-definition": {
+    "uuid": "ecf8b1b2-94f7-45c2-9e39-7d88460a8324",
+    "metadata": {
+      "title": "CIS RHEL9 Compliance Component",
+      "oscal_version": "1.1.2",
+      "version": "1.0.0",
+      "published": "2025-11-10T00:00:00Z"
+    },
+    "import-component-definitions": [],
+    "components": [
+      {
+        "uuid": "1f8e7f9c-b2a0-4bda-8d2c-c7f3f7e2b85a",
+        "type": "software",
+        "title": "Trivy Vulnerability Scanner",
+        "description": "Scans GitHub repositories for vulnerabilities and configuration compliance using Trivy.",
+        "props": [
+          {
+            "name": "tool",
+            "value": "Trivy"
+          },
+          {
+            "name": "vendor",
+            "value": "Aqua Security"
+          }
+        ],
+        "implemented-requirements": [
+          {
+            "control-id": "CIS-1.1.1",
+            "description": "Validated using Trivy configuration scan for filesystem mount settings"
+          },
+          {
+            "control-id": "CIS-1.2.3",
+            "description": "Checked file permissions using Trivy system scan results"
+          },
+          {
+            "control-id": "CIS-3.2.1",
+            "description": "Verified networking parameters through Trivy configuration audit"
+          }
+        ]
+      }
+    ]
+  }
+}

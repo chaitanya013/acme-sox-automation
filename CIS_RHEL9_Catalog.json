@@ -1,0 +1,64 @@
+{
+  "catalog": {
+    "uuid": "b41a2e2c-6c7e-4d93-8a9e-c2a3b2329bfa",
+    "metadata": {
+      "title": "CIS Red Hat Enterprise Linux 9 Benchmark",
+      "version": "1.0.0",
+      "oscal_version": "1.1.2",
+      "published": "2025-11-10T00:00:00Z"
+    },
+    "groups": [
+      {
+        "id": "cis_rhel9_controls",
+        "title": "CIS Controls for Red Hat Enterprise Linux 9",
+        "controls": [
+          {
+            "id": "CIS-1.1.1",
+            "title": "Ensure mounting of cramfs filesystems is disabled",
+            "class": "configuration",
+            "props": [
+              {
+                "name": "severity",
+                "value": "medium"
+              },
+              {
+                "name": "family",
+                "value": "Filesystem"
+              }
+            ]
+          },
+          {
+            "id": "CIS-1.2.3",
+            "title": "Verify permissions on /etc/passwd",
+            "class": "configuration",
+            "props": [
+              {
+                "name": "severity",
+                "value": "low"
+              },
+              {
+                "name": "family",
+                "value": "User Management"
+              }
+            ]
+          },
+          {
+            "id": "CIS-3.2.1",
+            "title": "Ensure packet redirect sending is disabled",
+            "class": "network",
+            "props": [
+              {
+                "name": "severity",
+                "value": "high"
+              },
+              {
+                "name": "family",
+                "value": "Networking"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
